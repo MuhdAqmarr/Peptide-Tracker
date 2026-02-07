@@ -86,9 +86,9 @@ export function VialsList({ vials, peptides }: Props) {
           ) : (
             <div
               key={vial.id}
-              className="flex items-center justify-between rounded-lg border border-gray-200 bg-white p-4"
+              className="flex flex-col gap-3 rounded-lg border border-gray-200 bg-white p-4 sm:flex-row sm:items-center sm:justify-between"
             >
-              <div>
+              <div className="min-w-0">
                 <div className="flex items-center gap-2">
                   <h3 className="font-medium text-gray-900">
                     {getPeptideName(vial.peptide_id)}
@@ -131,13 +131,13 @@ export function VialsList({ vials, peptides }: Props) {
               <div className="flex gap-2">
                 <button
                   onClick={() => setEditingId(vial.id)}
-                  className="rounded px-3 py-1 text-xs font-medium text-blue-600 hover:bg-blue-50"
+                  className="rounded px-3 py-2 text-xs font-medium text-blue-600 hover:bg-blue-50"
                 >
                   Edit
                 </button>
                 <button
                   onClick={() => handleDelete(vial.id)}
-                  className="rounded px-3 py-1 text-xs font-medium text-red-600 hover:bg-red-50"
+                  className="rounded px-3 py-2 text-xs font-medium text-red-600 hover:bg-red-50"
                 >
                   {tc('actions.delete')}
                 </button>

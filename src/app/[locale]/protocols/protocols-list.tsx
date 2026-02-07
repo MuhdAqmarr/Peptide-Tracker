@@ -71,10 +71,10 @@ export function ProtocolsList({ protocols }: Props) {
           ) : (
             <div
               key={protocol.id}
-              className="flex items-center justify-between rounded-lg border border-gray-200 bg-white p-4"
+              className="flex flex-col gap-3 rounded-lg border border-gray-200 bg-white p-4 sm:flex-row sm:items-center sm:justify-between"
             >
-              <div>
-                <div className="flex items-center gap-2">
+              <div className="min-w-0">
+                <div className="flex flex-wrap items-center gap-2">
                   <h3 className="font-medium text-gray-900">
                     {protocol.name}
                   </h3>
@@ -95,22 +95,22 @@ export function ProtocolsList({ protocols }: Props) {
                   {protocol.timezone}
                 </p>
               </div>
-              <div className="flex gap-2">
+              <div className="flex flex-wrap gap-2">
                 <Link
                   href={`/protocols/${protocol.id}`}
-                  className="rounded px-3 py-1 text-xs font-medium text-green-600 hover:bg-green-50"
+                  className="rounded px-3 py-2 text-xs font-medium text-green-600 hover:bg-green-50"
                 >
                   View
                 </Link>
                 <button
                   onClick={() => setEditingId(protocol.id)}
-                  className="rounded px-3 py-1 text-xs font-medium text-blue-600 hover:bg-blue-50"
+                  className="rounded px-3 py-2 text-xs font-medium text-blue-600 hover:bg-blue-50"
                 >
                   Edit
                 </button>
                 <button
                   onClick={() => handleDelete(protocol.id)}
-                  className="rounded px-3 py-1 text-xs font-medium text-red-600 hover:bg-red-50"
+                  className="rounded px-3 py-2 text-xs font-medium text-red-600 hover:bg-red-50"
                 >
                   {tc('actions.delete')}
                 </button>

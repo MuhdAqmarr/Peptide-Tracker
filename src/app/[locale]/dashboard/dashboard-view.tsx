@@ -44,9 +44,9 @@ export function DashboardView({ doses, showActions = true }: Props) {
     <div className="mt-4 space-y-3">
       {doses.map((dose) => (
         <div key={dose.id}>
-          <div className="flex items-center justify-between rounded-lg border border-gray-200 bg-white p-4">
-            <div>
-              <div className="flex items-center gap-2">
+          <div className="flex flex-col gap-3 rounded-lg border border-gray-200 bg-white p-4 sm:flex-row sm:items-center sm:justify-between">
+            <div className="min-w-0">
+              <div className="flex flex-wrap items-center gap-2">
                 <h3 className="font-medium text-gray-900">
                   {dose.peptide_name}
                 </h3>
@@ -67,22 +67,22 @@ export function DashboardView({ doses, showActions = true }: Props) {
             </div>
 
             {showActions && dose.status === 'DUE' && (
-              <div className="flex gap-2">
+              <div className="flex flex-wrap gap-2">
                 <button
                   onClick={() => handleMarkDone(dose.id)}
-                  className="rounded-md bg-green-600 px-3 py-1.5 text-xs font-medium text-white hover:bg-green-700"
+                  className="rounded-md bg-green-600 px-3 py-2 text-xs font-medium text-white hover:bg-green-700"
                 >
                   {t('actions.markDone')}
                 </button>
                 <button
                   onClick={() => setLoggingDoseId(dose.id)}
-                  className="rounded-md bg-blue-600 px-3 py-1.5 text-xs font-medium text-white hover:bg-blue-700"
+                  className="rounded-md bg-blue-600 px-3 py-2 text-xs font-medium text-white hover:bg-blue-700"
                 >
                   {t('actions.logDetails')}
                 </button>
                 <button
                   onClick={() => handleSkip(dose.id)}
-                  className="rounded-md border border-gray-300 px-3 py-1.5 text-xs font-medium text-gray-600 hover:bg-gray-50"
+                  className="rounded-md border border-gray-300 px-3 py-2 text-xs font-medium text-gray-600 hover:bg-gray-50"
                 >
                   {t('actions.skip')}
                 </button>

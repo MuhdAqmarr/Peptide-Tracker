@@ -66,7 +66,7 @@ export function SymptomLogsList({ logs }: Props) {
         {logs.map((log) => (
           <div
             key={log.id}
-            className="flex items-start justify-between rounded-lg border border-gray-200 bg-white p-4"
+            className="flex flex-col gap-3 rounded-lg border border-gray-200 bg-white p-4 sm:flex-row sm:items-start sm:justify-between"
           >
             <div>
               <p className="text-sm font-medium text-gray-900">
@@ -87,7 +87,7 @@ export function SymptomLogsList({ logs }: Props) {
             </div>
             <button
               onClick={() => handleDelete(log.id)}
-              className="rounded px-3 py-1 text-xs font-medium text-red-600 hover:bg-red-50"
+              className="self-start rounded px-3 py-2 text-xs font-medium text-red-600 hover:bg-red-50"
             >
               {tc('actions.delete')}
             </button>

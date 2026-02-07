@@ -59,7 +59,7 @@ export function SymptomLogForm({ onSuccess, onCancel }: Props) {
         <p className="mt-1 text-xs text-gray-400">{t('symptoms.helper')}</p>
       </div>
 
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-2 gap-3 sm:gap-4">
         {SCORE_FIELDS.map((field) => (
           <div key={field.name}>
             <label

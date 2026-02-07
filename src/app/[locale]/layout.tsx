@@ -26,6 +26,12 @@ export const metadata: Metadata = {
   description: 'Schedule and track your routines.',
 };
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+};
+
 type Props = {
   children: ReactNode;
   params: Promise<{ locale: string }>;
@@ -52,7 +58,7 @@ export default async function LocaleLayout({ children, params }: Props) {
       >
         <NextIntlClientProvider messages={messages}>
           <Navbar />
-          <main className="mx-auto max-w-5xl px-4 py-6">{children}</main>
+          <main className="mx-auto max-w-5xl px-4 py-4 sm:py-6">{children}</main>
           <OfflineIndicator />
           <ServiceWorkerRegister />
         </NextIntlClientProvider>

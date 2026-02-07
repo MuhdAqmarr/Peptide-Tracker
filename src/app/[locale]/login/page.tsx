@@ -18,8 +18,8 @@ function LoginContent() {
   const td = useTranslations('disclaimer');
 
   return (
-    <div className="flex min-h-[60vh] flex-col items-center justify-center gap-8">
-      <div className="w-full max-w-sm rounded-xl border border-gray-200 bg-white p-8 shadow-sm">
+    <div className="flex min-h-[60vh] flex-col items-center justify-center gap-6 px-4 sm:gap-8">
+      <div className="w-full max-w-sm rounded-xl border border-gray-200 bg-white p-6 shadow-sm sm:p-8">
         <div className="mb-6 text-center">
           <h1 className="text-2xl font-bold text-gray-900">
             {t('signIn.title')}

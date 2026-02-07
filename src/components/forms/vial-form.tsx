@@ -64,7 +64,7 @@ export function VialForm({ peptides, vial, onSuccess, onCancel }: Props) {
         </select>
       </div>
 
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <div>
           <label
             htmlFor="total_amount"
@@ -119,7 +119,7 @@ export function VialForm({ peptides, vial, onSuccess, onCancel }: Props) {
         />
       </div>
 
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <div>
           <label
             htmlFor="label"
@@ -152,7 +152,7 @@ export function VialForm({ peptides, vial, onSuccess, onCancel }: Props) {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <div>
           <label
             htmlFor="opened_on"

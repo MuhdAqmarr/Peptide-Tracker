@@ -72,7 +72,7 @@ export default async function DashboardPage({ params }: Props) {
         )}
       </div>
 
-      <div className="flex gap-6 pt-2">
+      <div className="flex flex-col gap-3 pt-2 sm:flex-row sm:gap-6">
         <Link
           href={`/${locale}/dashboard/history`}
           className="text-sm font-medium text-blue-600 hover:text-blue-700"

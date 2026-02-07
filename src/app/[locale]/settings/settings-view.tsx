@@ -57,7 +57,7 @@ export function SettingsView({ displayName }: Props) {
               type="text"
               defaultValue={displayName}
               required
-              className="mt-1 block w-full max-w-sm rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+              className="mt-1 block w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 sm:max-w-sm"
             />
           </div>
           {nameState.message && (
@@ -82,7 +82,7 @@ export function SettingsView({ displayName }: Props) {
         <p className="mt-1 text-sm text-gray-500">
           {t('privacy.exportHelper')}
         </p>
-        <div className="mt-4 flex gap-3">
+        <div className="mt-4 flex flex-wrap gap-3">
           <a
             href="/api/export?format=json"
             download

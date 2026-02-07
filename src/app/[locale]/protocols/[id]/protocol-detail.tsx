@@ -111,9 +111,9 @@ export function ProtocolDetail({ protocol, items, peptides }: Props) {
           ) : (
             <div
               key={item.id}
-              className="flex items-center justify-between rounded-lg border border-gray-200 bg-white p-4"
+              className="flex flex-col gap-3 rounded-lg border border-gray-200 bg-white p-4 sm:flex-row sm:items-center sm:justify-between"
             >
-              <div>
+              <div className="min-w-0">
                 <h3 className="font-medium text-gray-900">
                   {getPeptideName(item.peptide_id)}
                 </h3>
@@ -130,13 +130,13 @@ export function ProtocolDetail({ protocol, items, peptides }: Props) {
               <div className="flex gap-2">
                 <button
                   onClick={() => setEditingId(item.id)}
-                  className="rounded px-3 py-1 text-xs font-medium text-blue-600 hover:bg-blue-50"
+                  className="rounded px-3 py-2 text-xs font-medium text-blue-600 hover:bg-blue-50"
                 >
                   Edit
                 </button>
                 <button
                   onClick={() => handleDelete(item.id)}
-                  className="rounded px-3 py-1 text-xs font-medium text-red-600 hover:bg-red-50"
+                  className="rounded px-3 py-2 text-xs font-medium text-red-600 hover:bg-red-50"
                 >
                   {tc('actions.delete')}
                 </button>
