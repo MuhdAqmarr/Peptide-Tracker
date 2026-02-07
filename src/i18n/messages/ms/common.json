@@ -28,5 +28,6 @@
     "saved": "Perubahan berjaya disimpan.",
     "synced": "Data telah disegerakkan.",
     "syncFailed": "Penyegerakan gagal. Akan dicuba semula apabila dalam talian."
-  }
+  },
+  "offline": "Luar talian — perubahan akan disegerakkan apabila disambung semula"
 }

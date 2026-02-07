@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { Link, usePathname, useRouter } from '@/i18n/navigation';
 import { LanguageSwitcher } from './language-switcher';
@@ -14,15 +15,41 @@ const navItems = [
   { href: '/settings' as const, labelKey: 'nav.settings' as const },
 ];
 
-type Props = {
-  user: { email?: string; displayName?: string } | null;
-};
+type UserInfo = { email?: string; displayName?: string } | null;
 
-export function Navbar({ user }: Props) {
+export function Navbar() {
   const t = useTranslations('common');
   const tAuth = useTranslations('auth');
   const pathname = usePathname();
   const router = useRouter();
+  const [user, setUser] = useState<UserInfo>(null);
+
+  useEffect(() => {
+    const supabase = createClient();
+    supabase.auth.getUser().then(({ data: { user: authUser } }) => {
+      if (authUser) {
+        setUser({ email: authUser.email ?? undefined });
+        supabase
+          .from('profiles')
+          .select('display_name')
+          .eq('id', authUser.id)
+          .single()
+          .then(({ data: profile }) => {
+            if (profile?.display_name) {
+              setUser({ email: authUser.email ?? undefined, displayName: profile.display_name });
+            }
+          });
+      }
+    });
+
+    const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
+      if (!session?.user) {
+        setUser(null);
+      }
+    });
+
+    return () => subscription.unsubscribe();
+  }, []);
 
   async function handleSignOut() {
     const supabase = createClient();

@@ -28,5 +28,6 @@
     "saved": "Changes saved successfully.",
     "synced": "Data synced.",
     "syncFailed": "Sync failed. Will retry when online."
-  }
+  },
+  "offline": "Offline — changes will sync when reconnected"
 }

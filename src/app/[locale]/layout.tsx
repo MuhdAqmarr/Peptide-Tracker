@@ -7,7 +7,8 @@ import { setRequestLocale, getMessages } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
 import { routing } from '@/i18n/routing';
 import { Navbar } from '@/components/layout/navbar';
-import { createClient } from '@/lib/supabase/server';
+import { ServiceWorkerRegister } from '@/components/layout/sw-register';
+import { OfflineIndicator } from '@/components/layout/offline-indicator';
 import '../globals.css';
 
 const geistSans = Geist({
@@ -40,36 +41,20 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   const messages = await getMessages();
 
-  // Fetch user for navbar — non-blocking, null if not authenticated
-  let user: { email?: string; displayName?: string } | null = null;
-  try {
-    const supabase = await createClient();
-    const {
-      data: { user: authUser },
-    } = await supabase.auth.getUser();
-    if (authUser) {
-      const { data: profile } = await supabase
-        .from('profiles')
-        .select('display_name')
-        .eq('id', authUser.id)
-        .single();
-      user = {
-        email: authUser.email,
-        displayName: profile?.display_name ?? undefined,
-      };
-    }
-  } catch {
-    // Not authenticated or Supabase not configured — continue without user
-  }
-
   return (
     <html lang={locale} suppressHydrationWarning>
+      <head>
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#2563eb" />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased bg-gray-50 text-gray-900 min-h-screen`}
       >
         <NextIntlClientProvider messages={messages}>
-          <Navbar user={user} />
+          <Navbar />
           <main className="mx-auto max-w-5xl px-4 py-6">{children}</main>
+          <OfflineIndicator />
+          <ServiceWorkerRegister />
         </NextIntlClientProvider>
       </body>
     </html>
