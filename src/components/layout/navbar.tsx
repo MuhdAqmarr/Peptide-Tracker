@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { Link, usePathname, useRouter } from '@/i18n/navigation';
+import Image from 'next/image';
 import { LanguageSwitcher } from './language-switcher';
 import { createClient } from '@/lib/supabase/client';
 
@@ -62,7 +63,8 @@ export function Navbar() {
   return (
     <nav className="border-b border-gray-200 bg-white">
       <div className="mx-auto flex max-w-5xl items-center justify-between px-4 py-3">
-        <Link href="/" className="text-lg font-bold text-gray-900">
+        <Link href="/" className="flex items-center gap-2 text-lg font-bold text-gray-900">
+          <Image src="/logo.png" alt="" width={28} height={28} className="h-7 w-7" />
           {t('appName')}
         </Link>
 
