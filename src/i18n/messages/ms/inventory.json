@@ -1,0 +1,22 @@
+{
+  "title": "Inventori",
+  "helper": "Jejaki botol, tahap stok dan tarikh luput anda.",
+  "empty": "Tiada botol lagi. Tambah satu untuk mula menjejaki inventori.",
+  "actions": {
+    "addVial": "Tambah Botol"
+  },
+  "fields": {
+    "peptide": "Peptida",
+    "totalAmount": "Jumlah Keseluruhan",
+    "unit": "Unit",
+    "remaining": "Anggaran Baki",
+    "label": "Label (pilihan)",
+    "batch": "Kelompok (pilihan)",
+    "openedOn": "Dibuka Pada",
+    "expiresOn": "Luput Pada"
+  },
+  "reminders": {
+    "lowStock": "Stok Rendah",
+    "expiringSoon": "Hampir Luput"
+  }
+}

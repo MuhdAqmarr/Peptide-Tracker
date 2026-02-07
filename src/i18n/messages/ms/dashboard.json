@@ -1,0 +1,36 @@
+{
+  "title": {
+    "today": "Hari Ini",
+    "upcoming": "Akan Datang",
+    "history": "Sejarah"
+  },
+  "empty": {
+    "today": "Tiada jadual untuk hari ini.",
+    "upcoming": "Tiada tugas akan datang.",
+    "history": "Tiada dos yang lepas lagi."
+  },
+  "nav": {
+    "viewHistory": "Lihat Sejarah",
+    "sitePlanner": "Perancang Tapak"
+  },
+  "card": {
+    "scheduled": "Dijadualkan"
+  },
+  "actions": {
+    "markDone": "Tandakan selesai",
+    "skip": "Langkau",
+    "logDetails": "Rekod butiran"
+  },
+  "modal": {
+    "logDetails": {
+      "title": "Rekod Butiran",
+      "helper": "Rekodkan butiran tambahan untuk entri ini."
+    }
+  },
+  "fields": {
+    "time": "Masa",
+    "siteOptional": "Tapak (pilihan)",
+    "comfortOptional": "Keselesaan (pilihan)",
+    "notesOptional": "Nota (pilihan)"
+  }
+}

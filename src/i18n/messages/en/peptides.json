@@ -1,0 +1,15 @@
+{
+  "title": "Peptides",
+  "actions": {
+    "new": "New Peptide"
+  },
+  "fields": {
+    "name": "Name",
+    "unit": "Unit",
+    "routeOptional": "Route (optional)",
+    "notesOptional": "Notes (optional)"
+  },
+  "helper": {
+    "trackingOnly": "This app is for tracking only. No dosage advice is provided."
+  }
+}

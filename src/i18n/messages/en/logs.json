@@ -1,0 +1,12 @@
+{
+  "symptoms": {
+    "title": "Symptom Log",
+    "helper": "Track how you feel over time.",
+    "nausea": "Nausea",
+    "headache": "Headache",
+    "sleep": "Sleep Quality",
+    "appetite": "Appetite",
+    "notes": "Notes (optional)",
+    "empty": "No symptom logs yet. Add one to start tracking."
+  }
+}

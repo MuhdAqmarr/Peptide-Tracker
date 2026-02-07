@@ -1,0 +1,15 @@
+{
+  "title": "Peptida",
+  "actions": {
+    "new": "Peptida Baharu"
+  },
+  "fields": {
+    "name": "Nama",
+    "unit": "Unit",
+    "routeOptional": "Laluan (pilihan)",
+    "notesOptional": "Nota (pilihan)"
+  },
+  "helper": {
+    "trackingOnly": "Aplikasi ini hanya untuk penjejakan. Tiada nasihat dos disediakan."
+  }
+}

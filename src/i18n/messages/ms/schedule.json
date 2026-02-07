@@ -1,0 +1,21 @@
+{
+  "fields": {
+    "amount": "Jumlah",
+    "frequency": "Kekerapan",
+    "timeOfDay": "Masa Hari",
+    "sitePlanningOptional": "Perancangan Tapak (pilihan)"
+  },
+  "helper": {
+    "amount": "Masukkan jumlah setiap dos untuk tujuan penjejakan.",
+    "weekly": "Pilih hari dalam minggu.",
+    "custom": "Masukkan selang dalam hari (contoh: setiap 3 hari).",
+    "timeOfDay": "Bilakah ini perlu dijadualkan?",
+    "sitePlanning": "Aktifkan untuk memutar tapak suntikan secara automatik."
+  },
+  "freq": {
+    "daily": "Setiap hari (ED)",
+    "eod": "Selang sehari (EOD)",
+    "weekly": "Mingguan",
+    "custom": "Selang tersuai"
+  }
+}

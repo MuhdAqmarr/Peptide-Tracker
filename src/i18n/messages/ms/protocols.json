@@ -1,0 +1,17 @@
+{
+  "title": "Protokol",
+  "actions": {
+    "new": "Protokol Baharu"
+  },
+  "fields": {
+    "name": "Nama Protokol",
+    "startDate": "Tarikh Mula",
+    "endDateOptional": "Tarikh Tamat (pilihan)",
+    "timezone": "Zon Waktu"
+  },
+  "helper": {
+    "startDate": "Bilakah protokol ini bermula?",
+    "endDate": "Biarkan kosong untuk protokol tanpa had masa.",
+    "timezone": "Digunakan untuk penjadualan. Lalai kepada zon waktu setempat anda."
+  }
+}

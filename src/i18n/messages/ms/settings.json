@@ -1,0 +1,21 @@
+{
+  "title": "Tetapan",
+  "notifications": {
+    "neutralTitle": "Gaya Pemberitahuan",
+    "neutralHelper": "Pilih cara pemberitahuan dipaparkan.",
+    "neutralOnTitle": "Neutral",
+    "neutralOnBody": "Pemberitahuan dipaparkan sebagai \"Tugas berjadual perlu dilakukan\".",
+    "neutralOffTitle": "Deskriptif",
+    "neutralOffBody": "Pemberitahuan dipaparkan sebagai \"Peringatan rutin\"."
+  },
+  "privacy": {
+    "exportTitle": "Eksport Data",
+    "exportHelper": "Muat turun data anda sebagai JSON atau CSV.",
+    "deleteTitle": "Padam Akaun",
+    "deleteWarning": "Ini akan memadamkan akaun anda dan semua data berkaitan secara kekal. Tindakan ini tidak boleh dibatalkan."
+  },
+  "lock": {
+    "pinTitle": "Kunci PIN",
+    "pinHelper": "Tambah PIN untuk mengunci aplikasi pada peranti ini."
+  }
+}

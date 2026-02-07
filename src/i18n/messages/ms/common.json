@@ -1,0 +1,32 @@
+{
+  "appName": "ProtocolPal",
+  "nav": {
+    "dashboard": "Papan Pemuka",
+    "protocols": "Protokol",
+    "peptides": "Peptida",
+    "logs": "Log",
+    "inventory": "Inventori",
+    "settings": "Tetapan"
+  },
+  "actions": {
+    "save": "Simpan",
+    "cancel": "Batal",
+    "delete": "Padam",
+    "exportJson": "Eksport JSON",
+    "exportCsv": "Eksport CSV"
+  },
+  "status": {
+    "due": "Dijadualkan",
+    "done": "Selesai",
+    "skipped": "Dilangkau",
+    "missed": "Terlepas"
+  },
+  "errors": {
+    "generic": "Sesuatu telah berlaku. Sila cuba lagi."
+  },
+  "toasts": {
+    "saved": "Perubahan berjaya disimpan.",
+    "synced": "Data telah disegerakkan.",
+    "syncFailed": "Penyegerakan gagal. Akan dicuba semula apabila dalam talian."
+  }
+}

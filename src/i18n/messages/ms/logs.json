@@ -1,0 +1,12 @@
+{
+  "symptoms": {
+    "title": "Log Simptom",
+    "helper": "Jejaki perasaan anda dari semasa ke semasa.",
+    "nausea": "Loya",
+    "headache": "Sakit Kepala",
+    "sleep": "Kualiti Tidur",
+    "appetite": "Selera Makan",
+    "notes": "Nota (pilihan)",
+    "empty": "Tiada log simptom lagi. Tambah satu untuk mula menjejaki."
+  }
+}

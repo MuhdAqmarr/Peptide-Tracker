@@ -1,0 +1,36 @@
+{
+  "title": {
+    "today": "Today",
+    "upcoming": "Upcoming",
+    "history": "History"
+  },
+  "empty": {
+    "today": "Nothing scheduled for today.",
+    "upcoming": "No upcoming tasks.",
+    "history": "No past doses yet."
+  },
+  "nav": {
+    "viewHistory": "View History",
+    "sitePlanner": "Site Planner"
+  },
+  "card": {
+    "scheduled": "Scheduled"
+  },
+  "actions": {
+    "markDone": "Mark done",
+    "skip": "Skip",
+    "logDetails": "Log details"
+  },
+  "modal": {
+    "logDetails": {
+      "title": "Log Details",
+      "helper": "Record additional details for this entry."
+    }
+  },
+  "fields": {
+    "time": "Time",
+    "siteOptional": "Site (optional)",
+    "comfortOptional": "Comfort (optional)",
+    "notesOptional": "Notes (optional)"
+  }
+}

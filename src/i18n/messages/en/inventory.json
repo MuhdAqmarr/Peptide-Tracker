@@ -1,0 +1,22 @@
+{
+  "title": "Inventory",
+  "helper": "Track your vials, stock levels, and expiration dates.",
+  "empty": "No vials yet. Add one to start tracking inventory.",
+  "actions": {
+    "addVial": "Add Vial"
+  },
+  "fields": {
+    "peptide": "Peptide",
+    "totalAmount": "Total Amount",
+    "unit": "Unit",
+    "remaining": "Remaining Estimate",
+    "label": "Label (optional)",
+    "batch": "Batch (optional)",
+    "openedOn": "Opened On",
+    "expiresOn": "Expires On"
+  },
+  "reminders": {
+    "lowStock": "Low Stock",
+    "expiringSoon": "Expiring Soon"
+  }
+}

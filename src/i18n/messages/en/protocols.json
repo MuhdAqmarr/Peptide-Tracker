@@ -1,0 +1,17 @@
+{
+  "title": "Protocols",
+  "actions": {
+    "new": "New Protocol"
+  },
+  "fields": {
+    "name": "Protocol Name",
+    "startDate": "Start Date",
+    "endDateOptional": "End Date (optional)",
+    "timezone": "Timezone"
+  },
+  "helper": {
+    "startDate": "When does this protocol begin?",
+    "endDate": "Leave blank for an open-ended protocol.",
+    "timezone": "Used for scheduling. Defaults to your local timezone."
+  }
+}

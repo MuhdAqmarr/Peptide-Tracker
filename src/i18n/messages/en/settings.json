@@ -1,0 +1,21 @@
+{
+  "title": "Settings",
+  "notifications": {
+    "neutralTitle": "Notification Style",
+    "neutralHelper": "Choose how notifications appear.",
+    "neutralOnTitle": "Neutral",
+    "neutralOnBody": "Notifications show as \"Scheduled task due\".",
+    "neutralOffTitle": "Descriptive",
+    "neutralOffBody": "Notifications show as \"Routine reminder\"."
+  },
+  "privacy": {
+    "exportTitle": "Export Data",
+    "exportHelper": "Download your data as JSON or CSV.",
+    "deleteTitle": "Delete Account",
+    "deleteWarning": "This will permanently delete your account and all associated data. This action cannot be undone."
+  },
+  "lock": {
+    "pinTitle": "PIN Lock",
+    "pinHelper": "Add a PIN to lock the app on this device."
+  }
+}

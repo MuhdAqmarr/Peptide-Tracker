@@ -1,0 +1,21 @@
+{
+  "fields": {
+    "amount": "Amount",
+    "frequency": "Frequency",
+    "timeOfDay": "Time of Day",
+    "sitePlanningOptional": "Site Planning (optional)"
+  },
+  "helper": {
+    "amount": "Enter the amount per dose for tracking purposes.",
+    "weekly": "Select the days of the week.",
+    "custom": "Enter the interval in days (e.g. every 3 days).",
+    "timeOfDay": "When should this be scheduled?",
+    "sitePlanning": "Enable to rotate injection sites automatically."
+  },
+  "freq": {
+    "daily": "Every day (ED)",
+    "eod": "Every other day (EOD)",
+    "weekly": "Weekly",
+    "custom": "Custom interval"
+  }
+}

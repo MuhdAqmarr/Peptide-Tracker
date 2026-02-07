@@ -1,0 +1,32 @@
+{
+  "appName": "ProtocolPal",
+  "nav": {
+    "dashboard": "Dashboard",
+    "protocols": "Protocols",
+    "peptides": "Peptides",
+    "logs": "Logs",
+    "inventory": "Inventory",
+    "settings": "Settings"
+  },
+  "actions": {
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "exportJson": "Export JSON",
+    "exportCsv": "Export CSV"
+  },
+  "status": {
+    "due": "Due",
+    "done": "Done",
+    "skipped": "Skipped",
+    "missed": "Missed"
+  },
+  "errors": {
+    "generic": "Something went wrong. Please try again."
+  },
+  "toasts": {
+    "saved": "Changes saved successfully.",
+    "synced": "Data synced.",
+    "syncFailed": "Sync failed. Will retry when online."
+  }
+}

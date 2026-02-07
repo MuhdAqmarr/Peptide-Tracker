@@ -1,0 +1,9 @@
+{
+  "title": "Site Rotation Planner",
+  "helper": "Track injection sites and get rotation suggestions to avoid tissue damage.",
+  "suggested": "Suggested Next Site",
+  "lastUsed": "Last used",
+  "neverUsed": "Never used — good to go!",
+  "recentHistory": "Recent Site History",
+  "noHistory": "No injection site history yet."
+}
