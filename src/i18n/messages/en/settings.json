@@ -1,5 +1,9 @@
 {
   "title": "Settings",
+  "profile": {
+    "title": "Profile",
+    "displayName": "Display Name"
+  },
   "notifications": {
     "neutralTitle": "Notification Style",
     "neutralHelper": "Choose how notifications appear.",
@@ -12,7 +16,9 @@
     "exportTitle": "Export Data",
     "exportHelper": "Download your data as JSON or CSV.",
     "deleteTitle": "Delete Account",
-    "deleteWarning": "This will permanently delete your account and all associated data. This action cannot be undone."
+    "deleteWarning": "This will permanently delete your account and all associated data. This action cannot be undone.",
+    "confirmDelete": "Are you absolutely sure? This cannot be undone.",
+    "confirmYes": "Yes, delete my account"
   },
   "lock": {
     "pinTitle": "PIN Lock",

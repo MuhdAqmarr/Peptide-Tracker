@@ -1,5 +1,9 @@
 {
   "title": "Tetapan",
+  "profile": {
+    "title": "Profil",
+    "displayName": "Nama Paparan"
+  },
   "notifications": {
     "neutralTitle": "Gaya Pemberitahuan",
     "neutralHelper": "Pilih cara pemberitahuan dipaparkan.",
@@ -12,7 +16,9 @@
     "exportTitle": "Eksport Data",
     "exportHelper": "Muat turun data anda sebagai JSON atau CSV.",
     "deleteTitle": "Padam Akaun",
-    "deleteWarning": "Ini akan memadamkan akaun anda dan semua data berkaitan secara kekal. Tindakan ini tidak boleh dibatalkan."
+    "deleteWarning": "Ini akan memadamkan akaun anda dan semua data berkaitan secara kekal. Tindakan ini tidak boleh dibatalkan.",
+    "confirmDelete": "Adakah anda benar-benar pasti? Ini tidak boleh dibatalkan.",
+    "confirmYes": "Ya, padamkan akaun saya"
   },
   "lock": {
     "pinTitle": "Kunci PIN",
