@@ -6,9 +6,8 @@ import { hasLocale } from 'next-intl';
 import { setRequestLocale, getMessages } from 'next-intl/server';
 import { NextIntlClientProvider } from 'next-intl';
 import { routing } from '@/i18n/routing';
-import { Navbar } from '@/components/layout/navbar';
+import { LayoutShell } from '@/components/layout/layout-shell';
 import { ServiceWorkerRegister } from '@/components/layout/sw-register';
-import { OfflineIndicator } from '@/components/layout/offline-indicator';
 import '../globals.css';
 
 const geistSans = Geist({
@@ -57,9 +56,7 @@ export default async function LocaleLayout({ children, params }: Props) {
         className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased bg-gray-50 text-gray-900 min-h-screen`}
       >
         <NextIntlClientProvider messages={messages}>
-          <Navbar />
-          <main className="mx-auto max-w-5xl px-4 py-4 sm:py-6">{children}</main>
-          <OfflineIndicator />
+          <LayoutShell>{children}</LayoutShell>
           <ServiceWorkerRegister />
         </NextIntlClientProvider>
       </body>

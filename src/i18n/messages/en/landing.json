@@ -1,0 +1,140 @@
+{
+  "meta": {
+    "title": "ProtocolPal — Schedule & Track Your Routines",
+    "description": "A bilingual scheduling and tracking tool for personal routines. Offline-ready, mobile-first PWA."
+  },
+  "topbar": {
+    "menu": "Menu",
+    "goToApp": "Go to App"
+  },
+  "nav": {
+    "intro": "Intro",
+    "features": "Features",
+    "technology": "Technology",
+    "pricing": "Pricing",
+    "contact": "Contact"
+  },
+  "hero": {
+    "eyebrow": "Smart routine management",
+    "headlineOne": "Stay on track,",
+    "headlineTwo": "effortlessly.",
+    "description": "ProtocolPal helps you schedule routines, track adherence, and manage inventory — all in one clean, offline-ready app.",
+    "cta": "Get started",
+    "scrollMore": "Scroll for more",
+    "cardIndex": "01",
+    "cardDate": "2025 Release",
+    "cardTitle": "Built for clarity",
+    "cardDescription": "A personal scheduling companion designed around simplicity and focus."
+  },
+  "features": {
+    "eyebrow": "What you can do",
+    "title": "Everything you need to stay organised",
+    "learnMore": "Learn more",
+    "items": {
+      "scheduling": {
+        "title": "Flexible scheduling",
+        "description": "Set daily, every-other-day, weekly, or custom intervals. ProtocolPal generates your schedule automatically."
+      },
+      "tracking": {
+        "title": "Adherence tracking",
+        "description": "Log completed routines, skip days, or add notes. See your history at a glance with clear status indicators."
+      },
+      "inventory": {
+        "title": "Inventory management",
+        "description": "Track your supplies with vial-level detail. Get reminders before you run low so you never miss a day."
+      }
+    },
+    "highlight": {
+      "label": "Offline-ready",
+      "title": "Works without internet",
+      "description": "All data syncs automatically when you're back online. Use ProtocolPal anywhere."
+    }
+  },
+  "technology": {
+    "headline": "The system behind your routine",
+    "description": "Built with modern web standards for speed, reliability, and privacy. Your data stays on your device until you choose to sync.",
+    "timeline": {
+      "item1": {
+        "label": "PWA",
+        "caption": "Install on any device — works like a native app without the app store."
+      },
+      "item2": {
+        "label": "Offline-first",
+        "caption": "Queue actions offline. Everything syncs seamlessly when connectivity returns."
+      },
+      "item3": {
+        "label": "Bilingual",
+        "caption": "Full support for English and Bahasa Melayu. Switch anytime."
+      },
+      "item4": {
+        "label": "Secure",
+        "caption": "OAuth login via Google. Row-level security keeps your data private."
+      },
+      "item5": {
+        "label": "Open stack",
+        "caption": "Next.js, Supabase, and Tailwind CSS. Fast, modern, and maintainable."
+      }
+    }
+  },
+  "testimonials": {
+    "eyebrow": "Stories",
+    "title": "What users are saying",
+    "items": {
+      "user1": {
+        "name": "Aisha R.",
+        "role": "Health enthusiast",
+        "quote": "Finally, a tracking app that doesn't overwhelm me. Simple, clean, and it just works."
+      },
+      "user2": {
+        "name": "Daniel K.",
+        "role": "Fitness coach",
+        "quote": "I recommend ProtocolPal to all my clients. The scheduling flexibility is unmatched."
+      },
+      "user3": {
+        "name": "Siti N.",
+        "role": "Wellness advocate",
+        "quote": "Saya suka sokongan dwibahasa. Sangat mudah digunakan dalam bahasa Melayu."
+      },
+      "user4": {
+        "name": "James L.",
+        "role": "Personal trainer",
+        "quote": "The offline mode is a game changer. I can track everything even at the gym."
+      }
+    }
+  },
+  "pricing": {
+    "eyebrow": "Pricing",
+    "title": "Completely free",
+    "subtitle": "No hidden fees, no subscriptions. All features included.",
+    "badge": "Free forever",
+    "name": "ProtocolPal",
+    "price": "RM 0",
+    "period": "forever",
+    "description": "Full access to every feature, no limits.",
+    "features": {
+      "f1": "Unlimited protocols & schedules",
+      "f2": "Adherence tracking & history",
+      "f3": "Inventory management",
+      "f4": "Offline support & auto-sync",
+      "f5": "Bilingual (English & Bahasa Melayu)",
+      "f6": "Export data (JSON / CSV)"
+    },
+    "cta": "Get started — it's free"
+  },
+  "contact": {
+    "headline1": "GET",
+    "headline2": "STARTED",
+    "description": "Ready to take control of your routine? Sign up for free and start tracking today.",
+    "form": {
+      "name": "Your name",
+      "email": "Email address",
+      "message": "Message",
+      "send": "Send message"
+    },
+    "cta": "Open app"
+  },
+  "footer": {
+    "disclaimer": "Tracking tool only. Not medical advice.",
+    "copyright": "© {year} ProtocolPal. All rights reserved."
+  }
+}

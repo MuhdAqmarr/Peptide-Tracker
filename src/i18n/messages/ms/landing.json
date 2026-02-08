@@ -1,0 +1,140 @@
+{
+  "meta": {
+    "title": "ProtocolPal — Jadual & Jejak Rutin Anda",
+    "description": "Alat penjadualan dan penjejakan dwibahasa untuk rutin peribadi. Sedia luar talian, mesra mudah alih."
+  },
+  "topbar": {
+    "menu": "Menu",
+    "goToApp": "Buka Aplikasi"
+  },
+  "nav": {
+    "intro": "Pengenalan",
+    "features": "Ciri-ciri",
+    "technology": "Teknologi",
+    "pricing": "Harga",
+    "contact": "Hubungi"
+  },
+  "hero": {
+    "eyebrow": "Pengurusan rutin pintar",
+    "headlineOne": "Kekal teratur,",
+    "headlineTwo": "tanpa usaha.",
+    "description": "ProtocolPal membantu anda menjadual rutin, menjejak pematuhan, dan mengurus inventori — semuanya dalam satu aplikasi yang ringkas dan sedia luar talian.",
+    "cta": "Mula sekarang",
+    "scrollMore": "Tatal ke bawah",
+    "cardIndex": "01",
+    "cardDate": "Keluaran 2025",
+    "cardTitle": "Dibina untuk kejelasan",
+    "cardDescription": "Rakan penjadualan peribadi yang direka dengan kesederhanaan dan fokus."
+  },
+  "features": {
+    "eyebrow": "Apa yang boleh anda lakukan",
+    "title": "Semua yang anda perlukan untuk kekal teratur",
+    "learnMore": "Ketahui lebih lanjut",
+    "items": {
+      "scheduling": {
+        "title": "Penjadualan fleksibel",
+        "description": "Tetapkan harian, selang sehari, mingguan, atau selang tersuai. ProtocolPal menjana jadual anda secara automatik."
+      },
+      "tracking": {
+        "title": "Penjejakan pematuhan",
+        "description": "Rekod rutin selesai, langkau hari, atau tambah nota. Lihat sejarah anda dengan penunjuk status yang jelas."
+      },
+      "inventory": {
+        "title": "Pengurusan inventori",
+        "description": "Jejak bekalan anda dengan butiran tahap vial. Dapatkan peringatan sebelum kehabisan supaya anda tidak terlepas hari."
+      }
+    },
+    "highlight": {
+      "label": "Sedia luar talian",
+      "title": "Berfungsi tanpa internet",
+      "description": "Semua data disegerakkan secara automatik apabila anda kembali dalam talian. Gunakan ProtocolPal di mana sahaja."
+    }
+  },
+  "technology": {
+    "headline": "Sistem di sebalik rutin anda",
+    "description": "Dibina dengan standard web moden untuk kelajuan, kebolehpercayaan, dan privasi. Data anda kekal pada peranti anda sehingga anda memilih untuk menyegerakkan.",
+    "timeline": {
+      "item1": {
+        "label": "PWA",
+        "caption": "Pasang pada mana-mana peranti — berfungsi seperti aplikasi natif tanpa gedung aplikasi."
+      },
+      "item2": {
+        "label": "Luar talian",
+        "caption": "Barisan tindakan luar talian. Semuanya disegerakkan apabila sambungan kembali."
+      },
+      "item3": {
+        "label": "Dwibahasa",
+        "caption": "Sokongan penuh untuk Bahasa Inggeris dan Bahasa Melayu. Tukar bila-bila masa."
+      },
+      "item4": {
+        "label": "Selamat",
+        "caption": "Log masuk OAuth melalui Google. Keselamatan peringkat baris memastikan data anda peribadi."
+      },
+      "item5": {
+        "label": "Terbuka",
+        "caption": "Next.js, Supabase, dan Tailwind CSS. Pantas, moden, dan mudah diselenggara."
+      }
+    }
+  },
+  "testimonials": {
+    "eyebrow": "Cerita",
+    "title": "Apa kata pengguna",
+    "items": {
+      "user1": {
+        "name": "Aisha R.",
+        "role": "Peminat kesihatan",
+        "quote": "Akhirnya, aplikasi penjejakan yang tidak membebankan saya. Ringkas, bersih, dan berfungsi."
+      },
+      "user2": {
+        "name": "Daniel K.",
+        "role": "Jurulatih kecergasan",
+        "quote": "Saya cadangkan ProtocolPal kepada semua pelanggan saya. Kefleksibelan penjadualan tiada tandingan."
+      },
+      "user3": {
+        "name": "Siti N.",
+        "role": "Penyokong kesejahteraan",
+        "quote": "Saya suka sokongan dwibahasa. Sangat mudah digunakan dalam bahasa Melayu."
+      },
+      "user4": {
+        "name": "James L.",
+        "role": "Jurulatih peribadi",
+        "quote": "Mod luar talian memang hebat. Saya boleh jejak semua walaupun di gim."
+      }
+    }
+  },
+  "pricing": {
+    "eyebrow": "Harga",
+    "title": "Sepenuhnya percuma",
+    "subtitle": "Tiada caj tersembunyi, tiada langganan. Semua ciri disertakan.",
+    "badge": "Percuma selamanya",
+    "name": "ProtocolPal",
+    "price": "RM 0",
+    "period": "selamanya",
+    "description": "Akses penuh kepada semua ciri, tanpa had.",
+    "features": {
+      "f1": "Protokol & jadual tanpa had",
+      "f2": "Penjejakan pematuhan & sejarah",
+      "f3": "Pengurusan inventori",
+      "f4": "Sokongan luar talian & segerak automatik",
+      "f5": "Dwibahasa (Inggeris & Bahasa Melayu)",
+      "f6": "Eksport data (JSON / CSV)"
+    },
+    "cta": "Mula sekarang — percuma"
+  },
+  "contact": {
+    "headline1": "MULA",
+    "headline2": "SEKARANG",
+    "description": "Bersedia untuk mengawal rutin anda? Daftar percuma dan mula menjejak hari ini.",
+    "form": {
+      "name": "Nama anda",
+      "email": "Alamat emel",
+      "message": "Mesej",
+      "send": "Hantar mesej"
+    },
+    "cta": "Buka aplikasi"
+  },
+  "footer": {
+    "disclaimer": "Aplikasi ini untuk rekod sahaja. Bukan nasihat perubatan.",
+    "copyright": "© {year} ProtocolPal. Hak cipta terpelihara."
+  }
+}

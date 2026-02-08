@@ -20,6 +20,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
     disclaimer,
     sites,
     inventory,
+    landing,
   ] = await Promise.all([
     import(`./messages/${locale}/common.json`),
     import(`./messages/${locale}/auth.json`),
@@ -32,6 +33,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
     import(`./messages/${locale}/disclaimer.json`),
     import(`./messages/${locale}/sites.json`),
     import(`./messages/${locale}/inventory.json`),
+    import(`./messages/${locale}/landing.json`),
   ]);
 
   return {
@@ -48,6 +50,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
       disclaimer: disclaimer.default,
       sites: sites.default,
       inventory: inventory.default,
+      landing: landing.default,
     },
   };
 });
