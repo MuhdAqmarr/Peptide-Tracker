@@ -19,10 +19,19 @@ export async function proxy(request: NextRequest) {
   // 2. Run Supabase session refresh, piping cookies onto the intl response
   const { user } = await updateSession(request, intlResponse);
 
-  // 3. Auth guard — redirect unauthenticated users to login
+  // 3. Auth guard
   const { pathname } = request.nextUrl;
+
+  // Redirect authenticated users away from landing/login to dashboard
+  if (user && isPublicRoute(pathname)) {
+    const localeMatch = pathname.match(/^\/([a-z]{2})/);
+    const locale = localeMatch ? localeMatch[1] : routing.defaultLocale;
+    const dashboardUrl = new URL(`/${locale}/dashboard`, request.url);
+    return NextResponse.redirect(dashboardUrl);
+  }
+
+  // Redirect unauthenticated users to login
   if (!user && !isPublicRoute(pathname)) {
-    // Detect the locale from the path or fall back to default
     const localeMatch = pathname.match(/^\/([a-z]{2})\//);
     const locale = localeMatch ? localeMatch[1] : routing.defaultLocale;
     const loginUrl = new URL(`/${locale}/login`, request.url);

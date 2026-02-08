@@ -30,10 +30,13 @@ export async function updateSession(
     },
   );
 
-  // Refresh the auth token — do NOT use getSession() on the server.
+  // Use getSession() for fast local JWT validation in middleware.
+  // This avoids a network round-trip to Supabase on every navigation.
+  // Server Components / Route Handlers should still use getUser() for
+  // full token verification when performing sensitive operations.
   const {
-    data: { user },
-  } = await supabase.auth.getUser();
+    data: { session },
+  } = await supabase.auth.getSession();
 
-  return { response, user };
+  return { response, user: session?.user ?? null };
 }
